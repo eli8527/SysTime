@@ -6,5 +6,5 @@ module1 = Extension('systime',
 setup (name = 'SysTime',
        version = '1.0',
        description = 'This is a package that allows you to set system time',
-       author = 'Eric Li'
+       author = 'Eric Li',
        ext_modules = [module1])

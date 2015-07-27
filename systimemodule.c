@@ -11,11 +11,11 @@
 
 static PyObject *
 set_time(PyObject *self, PyObject *args) {
-    int tv_;
-    int tvu_;
+    float tv_;
+    float tvu_;
     int sts;
-    
-    if (!PyArg_ParseTuple(args, "ii", &tv_, &tvu_))
+
+    if (!PyArg_ParseTuple(args, "ff", &tv_, &tvu_))
         return NULL;
     struct timeval tv;
     tv.tv_sec = tv_;
